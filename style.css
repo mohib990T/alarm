@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(8, 151, 247);
+}
+
+.logo {
+    margin-bottom: 15px;
+    width: 70vw;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.container {
+    background-color: rgb(248, 244, 160);
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.timeblock {
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeblock div {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    margin-bottom: 20px;
+}
+
+.staticMessage {
+    background-color: rgb(219, 213, 104);
+    color: ghostwhite;
+    font-size: 30px;
+    margin-block: 10px;
+    border-radius: 10px;
+}
+
+.outpuArea {
+    display: flex;
+}
+
+.outpuArea button {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    background-image: linear-gradient(to right, rgb(39, 166, 250), rgb(250, 193, 117));
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+}
+
+.outpuArea button:hover {
+    background-image: linear-gradient(to right, rgb(14, 157, 253), rgb(250, 178, 84));
+}
+
+.outpuArea div {
+    width: 20vw;
+    background-color: rgb(219, 213, 104);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box2 {
+    width: 35vw;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clockBlock {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.clockBlock span {
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+}
+
+.box2 span {
+    font-size: 30px;
+    margin-block: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.box2 img {
+    height: 40vh;
+    width: 35vw;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .box2 img {
+        height: 30vh;
+    }
+
+    .box2 span {
+        font-size: 23px;
+        margin-block: 20px;
+        padding: 8px;
+    }
+
+    .clockBlock {
+        font-size: 30px;
+    }
+
+    .outpuArea button {
+        padding: 8px;
+        font-size: 18px;
+        width: 120px;
+    }
+
+    .staticMessage {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .box2 img {
+        height: 27vh;
+    }
+
+    .box2 span {
+        font-size: 20px;
+        margin-block: 20px;
+        padding: 5px;
+    }
+
+    .clockBlock {
+        font-size: 30px;
+    }
+
+    .outpuArea button {
+        padding: 6px;
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .staticMessage {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .box2 img {
+        height: 23vh;
+    }
+
+    .box2 span {
+        font-size: 18px;
+        margin-bottom: 60px;
+        padding: 4px;
+    }
+
+    .clockBlock {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    .outpuArea button {
+        padding: 2px;
+        font-size: 15px;
+        width: 95px;
+    }
+
+    .staticMessage {
+        font-size: 19px;
+    }
+}
